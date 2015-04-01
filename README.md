@@ -1,6 +1,8 @@
 # ui-bootstrap-fontawesome
 An addon Angular module for users of Angular-UI Bootstrap that would like to use Font-Awesome icons instead of the Glyphicons provided by the standard Bootstrap distribution.
 
+[![Build Status](https://secure.travis-ci.org/maxfierke/ui-bootstrap-fontawesome.svg)](http://travis-ci.org/maxfierke/ui-bootstrap-fontawesome)
+
 ## Installation
 
 * Include one of the JavaScript source files under `dist/` in your project. If you're unsure, go for `ui-bootstrap-fontawesome-[version].min.js` since that'll be nice and minified for ya. Project files **will be** available shortly on **Bower** so you'll be able to `bower install ui-bootstrap-fontawesome`
