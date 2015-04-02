@@ -25,9 +25,8 @@ This project has shamelessly stolen the build machinery from Angular-UI Bootstra
 * Build the whole project: `grunt` - this will run `lint`, `test`, and `concat` targets.
 
 ## Credits
-* Big ups to the Angular-UI team (especially Chris Chua &amp; Robin van Baalen who told me to make this). **However**, the Angular-UI is not involved with this project, so don't complain to them about issues caused by this. Complain to me.
+* Big ups to the Angular-UI team (especially Chris Chua &amp; Robin van Baalen who told me to make this). **However**, the Angular-UI team is not involved with this project, so don't complain to them about issues caused by this. Complain to me.
 * My lazy self for not wanting to copy the same templates into every project that uses Font-Awesome with Angular-UI Bootstrap.
 
 ## TODO
-* Rating component
 * Demo page showing that it works
