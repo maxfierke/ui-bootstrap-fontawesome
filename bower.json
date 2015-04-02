@@ -18,8 +18,12 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "misc",
+    "src",
+    "template",
+    "Gruntfile.js",
+    "karma.conf.js",
+    "package.json"
   ],
   "dependencies": {
     "angular-ui-bootstrap-bower": "~0.12.0"
