@@ -20,7 +20,7 @@ An addon Angular module for users of Angular-UI Bootstrap that would like to use
 * Install local dev dependencies: `npm install` while current directory is the ui-bootstrap-fontawesome repo. This will also run `bower install`, so no need to do that seperately.
 
 ### Build
-This project has shamelessly stolen the build machinery from Angular-UI Bootstrap, making it ridiculously easy to build lint, test, and build the project by just running `grunt`. Seriously, it's awesome and *So Agile d00d*&trade;.
+This project has shamelessly stolen the build machinery from Angular-UI Bootstrap, making it ridiculously easy to lint, test, and build the project by just running `grunt`. Seriously, it's awesome and *So Agile d00d*&trade;.
 
 * Build the whole project: `grunt` - this will run `lint`, `test`, and `concat` targets.
 
