@@ -29,4 +29,6 @@ This project has shamelessly stolen the build machinery from Angular-UI Bootstra
 * My lazy self for not wanting to copy the same templates into every project that uses Font-Awesome with Angular-UI Bootstrap.
 
 ## TODO
+* Carousel component
+* Rating component
 * Demo page showing that it works
