@@ -1,5 +1,5 @@
 {
-  "name": "ui-bootstrap-fontawesome",
+  "name": "angular-ui-bootstrap-fontawesome",
   "version": "0.1.0",
   "description": "A plugin for UI-Bootstrap that provides component templates using Font-Awesome, instead of Glyphicons",
   "main": "dist/ui-bootstrap-fontawesome.min.js",

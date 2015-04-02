@@ -5,7 +5,7 @@ An addon Angular module for users of Angular-UI Bootstrap that would like to use
 
 ## Installation
 
-* Include one of the JavaScript source files under `dist/` in your project. If you're unsure, go for `ui-bootstrap-fontawesome-[version].min.js` since that'll be nice and minified for ya. Project files **will be** available shortly on **Bower** so you'll be able to `bower install ui-bootstrap-fontawesome`
+* Include one of the JavaScript source files under `dist/` in your project. If you're unsure, go for `ui-bootstrap-fontawesome-[version].min.js` since that'll be nice and minified for ya. Project files **will be** available shortly on **Bower** so you'll be able to `bower install angular-ui-bootstrap-fontawesome`
 
 * Add `ui.bootstrap.fontawesome` as a dependency of your Angular module:
 
@@ -25,7 +25,7 @@ This project has shamelessly stolen the build machinery from Angular-UI Bootstra
 * Build the whole project: `grunt` - this will run `lint`, `test`, and `concat` targets.
 
 ## Credits
-* Big ups to the Angular-UI team (especially Chris Chua &amp; Robin van Baalen who told me to make this).
+* Big ups to the Angular-UI team (especially Chris Chua &amp; Robin van Baalen who told me to make this). **However**, the Angular-UI is not involved with this project, so don't complain to them about issues caused by this. Complain to me.
 * My lazy self for not wanting to copy the same templates into every project that uses Font-Awesome with Angular-UI Bootstrap.
 
 ## TODO
