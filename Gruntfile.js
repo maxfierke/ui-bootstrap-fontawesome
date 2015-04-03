@@ -332,6 +332,19 @@ module.exports = function(grunt) {
     grunt.config('concat.dist.src', grunt.config('concat.dist.src')
                  .concat(srcFiles).concat(tpljsFiles));
 
+    // If we're building a release, be sure to update the "latest" copy.
+    if (!grunt.config.get('pkg.version').match(/-SNAPSHOT$/)) {
+      grunt.log.writeln('Release version specified (no SNAPSHOT). Going to build out "latest" copy.');
+
+      var dist_latest_concat = grunt.config('concat.dist');
+      dist_latest_concat.dest = '<%= dist %>/<%= filename %>-latest.js';
+      grunt.config('concat.dist_latest', dist_latest_concat);
+
+      var dist_latest_uglify = grunt.config('uglify.dist');
+      dist_latest_uglify.dest = '<%= dist %>/<%= filename %>-latest.min.js';
+      grunt.config('uglify.dist_latest', dist_latest_uglify);
+    }
+
     grunt.task.run(['concat', 'uglify', 'makeModuleMappingFile', 'makeRawFilesJs']);
   });
 
