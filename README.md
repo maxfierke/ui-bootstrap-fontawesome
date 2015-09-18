@@ -5,7 +5,7 @@ An addon Angular module for users of Angular-UI Bootstrap that would like to use
 
 ## Installation
 
-* Include one of the JavaScript source files under `dist/` in your project. If you're unsure, go for `ui-bootstrap-fontawesome-[version].min.js` since that'll be nice and minified for ya. Project files **will be** available shortly on **Bower** so you'll be able to `bower install angular-ui-bootstrap-fontawesome`
+* Include one of the JavaScript source files under `dist/` in your project. If you're unsure, go for `ui-bootstrap-fontawesome-[version].min.js` since that'll be nice and minified for ya. It's also available on [bower](http://bower.io/search/?q=angular-ui-bootstrap-fontawesome) so you can `bower install angular-ui-bootstrap-fontawesome`, if that's how you roll.
 
 * Add `ui.bootstrap.fontawesome` as a dependency of your Angular module:
 
