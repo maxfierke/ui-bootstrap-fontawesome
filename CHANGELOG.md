@@ -1,3 +1,11 @@
+<a name"0.2.1"></a>
+### 0.2.1 (2015-09-19)
+
+#### Minor changes
+* `bower.json` - Removed `angular-ui-bootstrap` from dependencies.
+
+Only affects `bower` users during install. There were no changes to any of the templates.
+
 <a name"0.2.0"></a>
 ## 0.2.0 (2015-04-03)
 
