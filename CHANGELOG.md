@@ -2,7 +2,7 @@
 ### 0.2.1 (2015-09-19)
 
 #### Minor changes
-* `bower.json` - Removed `angular-ui-bootstrap` from dependencies.
+* `bower.json` - Removed `angular-ui-bootstrap` from dependencies. ([21b53bcb](https://github.com/maxfierke/ui-bootstrap-fontawesome/commit/21b53bcb56800acf8009e9e14b5bada5b6e31e9b), [97279137](97279137df8801e5af6f2477918bd53ba027a315))
 
 Only affects `bower` users during install. There were no changes to any of the templates.
 
