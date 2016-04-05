@@ -6,7 +6,7 @@
  * License: MIT
  */
 angular.module("ui.bootstrap.fontawesome", ["ui.bootstrap.fontawesome.tpls", "ui.bootstrap.carousel","ui.bootstrap.datepicker","ui.bootstrap.rating","ui.bootstrap.timepicker"]);
-angular.module("ui.bootstrap.fontawesome.tpls", ["template/carousel/carousel.html","template/datepicker/day.html","template/datepicker/month.html","template/datepicker/year.html","template/rating/rating.html","template/timepicker/timepicker.html"]);
+angular.module("ui.bootstrap.fontawesome.tpls", ["uib/template/carousel/carousel.html","uib/template/datepicker/day.html","uib/template/datepicker/month.html","uib/template/datepicker/year.html","uib/template/rating/rating.html","uib/template/timepicker/timepicker.html"]);
 angular.module("uib/template/carousel/carousel.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("uib/template/carousel/carousel.html",
     "<div ng-mouseenter=\"pause()\" ng-mouseleave=\"play()\" class=\"carousel\" ng-swipe-right=\"prev()\" ng-swipe-left=\"next()\">\n" +

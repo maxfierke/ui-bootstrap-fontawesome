@@ -2,6 +2,10 @@
 var markdown = require('node-markdown').Markdown;
 var fs = require('fs');
 
+function addPrefixToTemplateModule(name){
+  return 'uib/' + name;
+}
+
 module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -101,9 +105,7 @@ module.exports = function(grunt) {
         options: {
           module: null, // no bundle module for all the html2js templates
           base: '.',
-          rename: function(name){
-            return 'uib/' + name;
-          }
+          rename: addPrefixToTemplateModule
         },
         files: [{
           expand: true,
@@ -225,7 +227,9 @@ module.exports = function(grunt) {
       cssFiles: grunt.file.expand('src/'+name+'/*.css'),
       tplFiles: grunt.file.expand('template/'+name+'/*.html'),
       tpljsFiles: grunt.file.expand('template/'+name+'/*.html.js'),
-      tplModules: grunt.file.expand('template/'+name+'/*.html').map(enquote),
+      tplModules: grunt.file.expand('template/'+name+'/*.html').map(function(name) {
+        return enquote(addPrefixToTemplateModule(name));
+      }),
       dependencies: dependenciesForModule(name),
       docs: {
         md: grunt.file.expand('src/'+name+'/docs/*.md')
