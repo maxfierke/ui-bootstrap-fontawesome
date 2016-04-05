@@ -18,7 +18,7 @@ module.exports = function(grunt) {
   grunt.util.linefeed = '\n';
 
   grunt.initConfig({
-    ngversion: '1.3.13',
+    ngversion: '1.5.3',
     bsversion: '3.1.1',
     modules: [],//to be filled in by build task
     pkg: grunt.file.readJSON('package.json'),
@@ -100,7 +100,10 @@ module.exports = function(grunt) {
       dist: {
         options: {
           module: null, // no bundle module for all the html2js templates
-          base: '.'
+          base: '.',
+          rename: function(name){
+            return 'uib/' + name;
+          }
         },
         files: [{
           expand: true,

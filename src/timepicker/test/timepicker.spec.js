@@ -2,13 +2,13 @@ describe('timepicker directive', function () {
   var $rootScope, $compile, element;
 
   beforeEach(module('ui.bootstrap.timepicker'));
-  beforeEach(module('template/timepicker/timepicker.html'));
+  beforeEach(module('uib/template/timepicker/timepicker.html'));
   beforeEach(inject(function(_$compile_, _$rootScope_) {
     $compile = _$compile_;
     $rootScope = _$rootScope_;
     $rootScope.time = newTime(14, 40);
 
-    element = $compile('<timepicker ng-model="time"></timepicker>')($rootScope);
+    element = $compile('<uib-timepicker ng-model="time"></uib-timepicker>')($rootScope);
     $rootScope.$digest();
   }));
 
@@ -20,8 +20,8 @@ describe('timepicker directive', function () {
   }
 
   it('uses Font-Awesome icon classes', function () {
-    expect(element.find('tr > td > .btn > .fa.fa-chevron-up').length).toBe(2);
-    expect(element.find('tr > td > .btn > .fa.fa-chevron-down').length).toBe(2);
+    expect(element.find('tr > td > .btn > .fa.fa-chevron-up').length).toBe(3);
+    expect(element.find('tr > td > .btn > .fa.fa-chevron-down').length).toBe(3);
   });
 });
 
