@@ -5,7 +5,7 @@ describe('datepicker directive', function () {
   beforeEach(module('uib/template/datepicker/day.html'));
   beforeEach(module('uib/template/datepicker/month.html'));
   beforeEach(module('uib/template/datepicker/year.html'));
-  beforeEach(module('uib/template/datepicker/popup.html'));
+  beforeEach(module('uib/template/datepickerPopup/popup.html'));
   beforeEach(module(function($compileProvider) {
     $compileProvider.directive('dateModel', function() {
       return {
