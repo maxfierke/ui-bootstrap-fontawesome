@@ -13,6 +13,11 @@ An addon Angular module for users of Angular-UI Bootstrap that would like to use
 	angular.module('amazingDemoApp', ['ui.bootstrap', 'ui.bootstrap.fontawesome']);
 	```
 
+### Version Guide
+
+* 0.2.x - Supports Angular-UI 0.13.x and 0.14.x (tested with Angular 1.3.13)
+* 0.3.x - Supports Angular-UI 1.2.x (tested with Angular.js 1.5.3)
+
 ## Development
 ### Prepare your environment
 * Install [Node.js](http://nodejs.org/) and NPM (should come with)
