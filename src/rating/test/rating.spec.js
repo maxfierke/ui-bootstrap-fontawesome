@@ -1,12 +1,12 @@
 describe('rating directive', function () {
   var $rootScope, $compile, element;
   beforeEach(module('ui.bootstrap.rating'));
-  beforeEach(module('template/rating/rating.html'));
+  beforeEach(module('uib/template/rating/rating.html'));
   beforeEach(inject(function(_$compile_, _$rootScope_) {
     $compile = _$compile_;
     $rootScope = _$rootScope_;
     $rootScope.rate = 3;
-    element = $compile('<rating ng-model="rate"></rating>')($rootScope);
+    element = $compile('<uib-rating ng-model="rate"></uib-rating>')($rootScope);
     $rootScope.$digest();
   }));
 

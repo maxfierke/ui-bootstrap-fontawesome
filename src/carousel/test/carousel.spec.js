@@ -12,7 +12,7 @@ describe('carousel', function() {
       });
     }
   }));
-  beforeEach(module('template/carousel/carousel.html', 'template/carousel/slide.html'));
+  beforeEach(module('uib/template/carousel/carousel.html', 'uib/template/carousel/slide.html'));
 
   var $rootScope, $compile;
   beforeEach(inject(function(_$rootScope_, _$compile_) {
@@ -30,11 +30,11 @@ describe('carousel', function() {
         {active:false,content:'three'}
       ];
       elm = $compile(
-        '<carousel interval="interval" no-transition="true" no-pause="nopause">' +
-          '<slide ng-repeat="slide in slides" active="slide.active">' +
+        '<uib-carousel interval="interval" no-transition="true" no-pause="nopause">' +
+          '<uib-slide ng-repeat="slide in slides" active="slide.active">' +
             '{{slide.content}}' +
-          '</slide>' +
-        '</carousel>'
+          '</uib-slide>' +
+        '</uib-carousel>'
       )(scope);
       scope.interval = 5000;
       scope.nopause = undefined;

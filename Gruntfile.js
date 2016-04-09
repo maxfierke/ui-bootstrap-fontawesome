@@ -2,6 +2,10 @@
 var markdown = require('node-markdown').Markdown;
 var fs = require('fs');
 
+function addPrefixToTemplateModule(name){
+  return 'uib/' + name;
+}
+
 module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -18,7 +22,7 @@ module.exports = function(grunt) {
   grunt.util.linefeed = '\n';
 
   grunt.initConfig({
-    ngversion: '1.3.13',
+    ngversion: '1.5.3',
     bsversion: '3.1.1',
     modules: [],//to be filled in by build task
     pkg: grunt.file.readJSON('package.json'),
@@ -100,7 +104,8 @@ module.exports = function(grunt) {
       dist: {
         options: {
           module: null, // no bundle module for all the html2js templates
-          base: '.'
+          base: '.',
+          rename: addPrefixToTemplateModule
         },
         files: [{
           expand: true,
@@ -222,7 +227,9 @@ module.exports = function(grunt) {
       cssFiles: grunt.file.expand('src/'+name+'/*.css'),
       tplFiles: grunt.file.expand('template/'+name+'/*.html'),
       tpljsFiles: grunt.file.expand('template/'+name+'/*.html.js'),
-      tplModules: grunt.file.expand('template/'+name+'/*.html').map(enquote),
+      tplModules: grunt.file.expand('template/'+name+'/*.html').map(function(name) {
+        return enquote(addPrefixToTemplateModule(name));
+      }),
       dependencies: dependenciesForModule(name),
       docs: {
         md: grunt.file.expand('src/'+name+'/docs/*.md')
