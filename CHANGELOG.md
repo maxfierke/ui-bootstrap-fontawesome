@@ -1,5 +1,5 @@
-<a name"0.2.1"></a>
-### 0.2.1 (2016-04-08)
+<a name"0.3.0"></a>
+## 0.3.0 (2016-04-08)
 
 
 #### Bug Fixes
@@ -10,7 +10,6 @@
 #### Features
 
 * **templates:** Update angular and angular-bootstrap to 1.5 and 1.2 ([8c7e819d](https://github.com/maxfierke/ui-bootstrap-fontawesome/commit/8c7e819d))
-
 
 <a name"0.2.1"></a>
 ### 0.2.1 (2015-09-19)
